@@ -1,0 +1,22 @@
+.portfolio__section {
+  @extend %section;
+}
+
+.portfolio__container {
+  @extend %container;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__list {
+  @extend %list;
+  display: flex;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 10px;
+}

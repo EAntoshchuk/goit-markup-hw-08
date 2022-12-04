@@ -1,0 +1,55 @@
+.about-us {
+  @extend %section;
+  &__container {
+    @extend %container;
+  }
+}
+
+.about-us__list {
+  @extend %list;
+  display: flex;
+}
+
+.about-us__item::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-satellite::before {
+  background-image: url(../images/satellite.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.about-us__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us__title {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.about-us__text {
+  width: 270px;
+  line-height: calc(24 / 14);
+  color: $description-text;
+}
