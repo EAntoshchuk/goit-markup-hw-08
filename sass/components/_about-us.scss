@@ -1,24 +1,46 @@
 .about-us {
   @extend %section;
-  // &__container {
-  //   @extend %container;
-  // }
+}
+
+.about-us__container {
+  @extend %container;
 }
 
 .about-us__list {
   @extend %list;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.about-us__item {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 
 .about-us__item::before {
   content: "";
   display: block;
-  margin-bottom: 30px;
   height: 120px;
-  width: 450px;
-  max-width: 450px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -40,17 +62,12 @@
   background-image: url(../images/astronaut.svg);
 }
 
-@media screen and (min-width: 1200px) {
-  .about-us__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
 .about-us__title {
   margin-bottom: 10px;
   font-style: normal;
   font-size: 14px;
   line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   @media screen and (max-width: 767px) {
@@ -70,7 +87,7 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
-
+  font-size: 14px;
   line-height: calc(24 / 14);
   color: $description-text;
 }

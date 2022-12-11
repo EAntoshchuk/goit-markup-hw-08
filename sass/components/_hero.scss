@@ -1,8 +1,6 @@
 .hero {
   @extend %section;
-  max-width: 1600px;
   margin: 0 auto;
-  padding: 200px 0;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -13,17 +11,31 @@
   background-position: center;
   background-size: cover;
   background-color: $bg-color;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+.hero__container {
+  @extend %container;
 }
 
 .hero__title {
-  width: 700px;
   margin: 0 auto;
   margin-bottom: 30px;
   color: $main-title-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+  }
 }
