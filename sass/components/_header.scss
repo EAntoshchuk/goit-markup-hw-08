@@ -22,13 +22,20 @@
 .web-logo {
   color: $web-logo-color;
 }
+
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .nav__list {
-  @extend %list;
+  list-style: none;
   display: flex;
 }
 
@@ -46,7 +53,6 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   @include transition(color);
-  //   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link--current {
@@ -75,10 +81,16 @@
 }
 
 .contacts__list {
-  @extend %list;
-  display: flex;
-  margin-left: auto;
-  padding: 0;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+  }
 }
 
 .contacts__item {
@@ -98,7 +110,6 @@
   letter-spacing: 0.02em;
   color: $description-text;
   @include transition(color);
-  //   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__icon {

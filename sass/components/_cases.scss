@@ -1,4 +1,7 @@
 .cases {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   @extend %section;
   display: flex;
   padding-top: 0;
