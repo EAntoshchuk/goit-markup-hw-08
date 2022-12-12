@@ -15,8 +15,16 @@
 .filter__list {
   @extend %list;
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .filter__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }

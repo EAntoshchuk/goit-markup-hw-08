@@ -33,6 +33,100 @@
         <a class="header-logo header__logo" lang="en" href="./index.html">
           <span class="web-logo web__logo">Web</span>Studio
         </a>
+        <!-------------------- Mobile menu button -------------------->
+        <button
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mb-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mb_menu"></use>
+          </svg>
+        </button>
+
+        <!-------------------- Mobile menu -------------------->
+
+        <div class="menu__container js-menu-container" id="mobile-menu">
+          <button class="menu__toggle js-close-menu">
+            <svg
+              class="mb-menu__icon"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <use href="./images/icons.svg#icon-mb-menu_close"></use>
+            </svg>
+          </button>
+
+          <ul class="mb-menu__list">
+            <li class="mb-menu__item">
+              <a href="./index.html" class="mb-menu__link">Студія</a>
+            </li>
+            <li class="mb-menu__item">
+              <a href="./portfolio.html" class="mb-menu__link">Портфоліо</a>
+            </li>
+            <li class="mb-menu__item">
+              <a href="" class="mb-menu__link">Контакти</a>
+            </li>
+          </ul>
+
+          <div class="mb-menu__footer">
+            <ul class="mb-contacts__list">
+              <li class="mb-contacts-item">
+                <a href="tel:+380961111111" class="mb-contacts__tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mb-contacts-item">
+                <a href="mailto:info@devstudio.com" class="mb-contacts__mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mb-socials__list">
+              <li class="mb-socials__item">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mb-socials__link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mb-socials__item">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mb-socials__link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mb-socials__item">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mb-socials__link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mb-socials__item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mb-socials__link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-------------------- Site navigation -------------------->
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -99,7 +193,7 @@
 
           <div class="container projects">
             <ul class="card-set projects__list">
-              <li class="card-set-item projects__item">
+              <li class="card-set__item projects__item">
                 <a class="projects__link" href="" rel="noopener noreferrer">
                   <div class="overlay__thumb">
                     <img
@@ -422,5 +516,13 @@
         </div>
       </div>
     </footer>
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
