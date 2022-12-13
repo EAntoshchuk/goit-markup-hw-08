@@ -23,6 +23,7 @@
 
 .cases__item {
   position: relative;
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 
 .cases__thumb {
