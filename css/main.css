@@ -16,23 +16,23 @@
   list-style: none;
 }
 
-.portfolio__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
+.footer__container, .portfolio__container, .client__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 480px) {
-  .portfolio__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
+  .footer__container, .portfolio__container, .client__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .portfolio__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
+  .footer__container, .portfolio__container, .client__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .portfolio__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
+  .footer__container, .portfolio__container, .client__container, .team__container, .cases__container, .about-us__container, .hero__container, .header__container {
     width: 1200px;
   }
 }
@@ -606,10 +606,14 @@ img {
   line-height: 1.7142857143;
   color: #757575;
 }
+@media screen and (max-width: 1199px) {
+  .about-us__text {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .about-us__text {
     width: 450px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1031,10 +1035,13 @@ img {
   color: #757575;
 }
 
+.footer {
+  background-color: #2f303a;
+}
+
 .footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -1067,9 +1074,14 @@ img {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer__contacts {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    margin-right: 168px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1189,9 +1201,16 @@ img {
   fill: #ffffff;
 }
 
-.subscription__container {
-  margin-left: 15px;
-  margin-right: 15px;
+@media screen and (max-width: 767px) {
+  .subscription__container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription__container {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__container {
@@ -1235,6 +1254,16 @@ img {
 @media screen and (max-width: 767px) {
   .subscription__field {
     max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription__field {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__field {
+    margin-right: 12px;
   }
 }
 
